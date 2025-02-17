@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prank!</title>
+    <script>
+        let count = 0;
+        let interval = setInterval(function() {
+            if (count < 30) {
+                window.open('about:blank', '_blank');
+                count++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 2000); // Open a new tab every 2 seconds for 1 minute
+    </script>
+</head>
+<body>
+    <h1>You're being pranked!</h1>
+    <p>Close this window, and the tabs will stop opening in 1 minute. 😜</p>
+</body>
+</html>
